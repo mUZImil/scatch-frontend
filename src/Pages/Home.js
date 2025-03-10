@@ -19,7 +19,7 @@ export default function Home() {
     async function run() {
       try {
         console.log('useEffect')
-        let res = await axios.get('http://localhost:3004/products');
+        let res = await axios.get('https://scatch-gold.vercel.app/products');
         setArr(res.data);
       } catch (err) {
         console.log(err.message)

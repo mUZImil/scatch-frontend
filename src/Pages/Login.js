@@ -34,7 +34,7 @@ export default function Login() {
  async function handleSubmit(e) {
     try {
       e.preventDefault();
-      let res = await axios.post('http://localhost:3004/find', submit);
+      let res = await axios.post('https://scatch-gold.vercel.app/find', submit);
       console.log('post', res.data)
       // const response = await axios.get('http://localhost:3001/get-cookie');
       // console.log('get', response.data.cookies)

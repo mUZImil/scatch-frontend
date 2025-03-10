@@ -29,7 +29,7 @@ function handleSubmit(e) {
     console.log('posted 1');
     e.preventDefault();
     console.log('posted 2');
-    axios.post('http://localhost:3004/create', submit);
+    axios.post('https://scatch-gold.vercel.app/create', submit);
     console.log('posted 3'); 
   } catch (err) {
     console.log(err.message)
